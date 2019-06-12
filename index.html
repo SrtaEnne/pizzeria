@@ -13,6 +13,19 @@
     <link href="fonts/stylesheet.css" rel="stylesheet">
   </head>
   <body>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk'));
+    </script>
+
     <section class="container-topo">
     	<section class="container">
         	<section class="row">
@@ -121,5 +134,57 @@
                 </section>
             </section>
         </section>
+        <!---------------------------------------------- FOOTER ---------------------------------------------->
+        <section class="container-rodape hidden-xs">
+            <section class="container">
+                <section class="row">
+                    
+                    <section class="col-lg-4">
+                        <h1 class="font-padrao">O QUE DIZEM DA NOSSA PIZZA</h1>
+                        <section class="loop-depoimentos">
+                            <img src="imgs/icon-depoimentos.png" class="img-responsive">
+                            <p class="font-padrao tamanho20">Melhorpizza que já comi na vida. Lugar excelente, atendimento impecável! Super recomendo.</p>
+                        </section>
+                        
+                        <section class="loop-depoimentos">
+                            <img src="imgs/icon-depoimentos.png" class="img-responsive">
+                            <p class="font-padrao tamanho20">Melhorpizza que já comi na vida. Lugar excelente, atendimento impecável! Super recomendo.</p>
+                        </section>                   
+                    </section>
+                    
+                    <section class="col-lg-4">
+                        <h1 class="font-padrao">ÚLTIMAS DO BLOG</h1>
+                        <section class="loop-posts">
+                            <h1 class="data-posts">26</h1>
+                            <p class="font-padrao tamanho20">Primeiros passos para apreciar um bom vinho!</p>
+                        </section>
+                        
+                        <section class="loop-posts">
+                            <h1 class="data-posts">26</h1>
+                            <p class="font-padrao tamanho20">Primeiros passos para apreciar um bom vinho!</p>
+                        </section>
+                        
+                        <section class="loop-posts">
+                            <h1 class="data-posts">26</h1>
+                            <p class="font-padrao tamanho20">Primeiros passos para apreciar um bom vinho!</p>
+                        </section>   
+                    </section>
+                    
+                    <section class="col-lg-4">
+                        <h1 class="font-padrao">ENCONTRE-NOS NO FACEBOOK</h1>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="350" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                    </section>  
+                </section>
+            </section>
+        </section>
+
+        <section class="rodape-fim">
+            <p>pizzeria.com.br - todos os direitos reservados</p>
+        </section>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
